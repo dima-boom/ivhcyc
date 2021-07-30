@@ -56,6 +56,13 @@ try:
                                             'action': 'create', 'service': '352', 'quantity': int(ckok), 'link': str(sslka)})
                     
                     write_message(sender, 'Всё ок')
+                elif reseived_message[0:5] == '/proc':
+                    # ПРИМЕР СООБЩЕНИЯ: \l 79287777777 10
+                    sslka = text1(reseived_message)
+                    ckok = text2(reseived_message)
+
+                    requests.post('https://instagram777.ru/api', params={'key': '13fbaa7934e4869e63c9378e5142d539',
+                                            'action': 'create', 'service': '154', 'quantity': int(ckok), 'link': str(sslka)})
                 elif reseived_message[0:5] == '/pros':
                     # ПРИМЕР СООБЩЕНИЯ: \l 79287777777 10
                     sslka = text1(reseived_message)
@@ -76,3 +83,4 @@ try:
                     write_message(sender, 'Всё ок')
 except:
     os.system('python bot.py')
+
