@@ -26,38 +26,38 @@ try:
           if sender == 664033661:
               if reseived_message == 'начать':
                   write_message(sender, "Работает!")
-              elif reseived_message[0:2] == '/proc':
+              elif reseived_message[0:5] == '/proc':
                   naz = text1(reseived_message)
                   ckok = text2(reseived_message)
                   requests.post('https://instagram777.ru/api', params={'key': '13fbaa7934e4869e63c9378e5142d539',
                                       'action': 'create', 'service': '154', 'quantity': int(ckok), 'link': str(naz)})
                   write_message(sender, 'Всё ок')
 
-              elif reseived_message[0:2] == '/pod':
+              elif reseived_message[0:4] == '/pod':
                   naz = text1(reseived_message)
                   ckok = text2(reseived_message)
                   requests.post('https://instagram777.ru/api', params={'key': '13fbaa7934e4869e63c9378e5142d539',
                                       'action': 'create', 'service': '350', 'quantity': int(ckok), 'link': str(naz)})
                   write_message(sender, 'Всё ок')
-              elif reseived_message[0:2] == '/lik':
+              elif reseived_message[0:4] == '/lik':
                   naz = text1(reseived_message)
                   ckok = text2(reseived_message)
                   requests.post('https://instagram777.ru/api', params={'key': '13fbaa7934e4869e63c9378e5142d539',
                                       'action': 'create', 'service': '351', 'quantity': int(ckok), 'link': str(naz)})
                   write_message(sender, 'Всё ок')
-              elif reseived_message[0:2] == '/rep':
+              elif reseived_message[0:4] == '/rep':
                   naz = text1(reseived_message)
                   ckok = text2(reseived_message)
                   requests.post('https://instagram777.ru/api', params={'key': '13fbaa7934e4869e63c9378e5142d539',
                                       'action': 'create', 'service': '352', 'quantity': int(ckok), 'link': str(naz)})
                   write_message(sender, 'Всё ок')
-              elif reseived_message[0:2] == '/pood':
+              elif reseived_message[0:5] == '/pood':
                   naz = text1(reseived_message)
                   ckok = text2(reseived_message)
                   requests.post('https://instagram777.ru/api', params={'key': '13fbaa7934e4869e63c9378e5142d539',
                                       'action': 'create', 'service': '400', 'quantity': int(ckok), 'link': str(naz)})
                   write_message(sender, 'Всё ок')
-              elif reseived_message[0:2] == '/pros':
+              elif reseived_message[0:5] == '/pros':
                   naz = text1(reseived_message)
                   ckok = text2(reseived_message)
                   requests.post('https://instagram777.ru/api', params={'key': '13fbaa7934e4869e63c9378e5142d539',
