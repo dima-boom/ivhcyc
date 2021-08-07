@@ -15,7 +15,7 @@ try:
   def write_message(sender, message):
       authorize.method('messages.send', {'user_id': sender, 'message': message, "random_id": get_random_id()})
 
-  token = "dcf64616cd768eb1c3c643b99da273a475e7453382b96296b41245ea4a0e8f0600f886f8abdd0300b4475b"
+  token = "c98ff7c3d2e73837bf6c35b5c4f05912bdd231661c73ab6e4581c99581e218dcdb2abed9c78063565a26b"
   authorize = vk_api.VkApi(token=token)
   longpoll = VkLongPoll(authorize)
   for event in longpoll.listen():
