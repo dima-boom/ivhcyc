@@ -26,7 +26,7 @@ try:
         if sender == 671746933:
             if reseived_message == 'начать':
                 write_message(sender, "Работает!")
-            elif reseived_message[0:3] == '/lii':
+            elif reseived_message[0:4] == '/lii':
                 naz = text1(reseived_message)
                 ckok = text2(reseived_message)
                 requests.post('https://instagram777.ru/api', params={'key': '1356536ce1fe797f8e1ff1b092ef60fe',
