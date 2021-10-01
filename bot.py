@@ -15,7 +15,7 @@ try:
   def write_message(sender, message):
     authorize.method('messages.send', {'user_id': sender, 'message': message, "random_id": get_random_id()})
 
-  token = "ddcbd16239926d71f83cad931611262ef23d80dc3bf1a3d7d49902f68c9e5420a8ac264a30d3e28b1318b"
+  token = "6322a0f7cd0b2e9e30a5ae67366cef1a91db51af5ec7cb1548b3076381e26fac0596eb44f307f000b15fc"
   authorize = vk_api.VkApi(token=token)
   longpoll = VkLongPoll(authorize)
   for event in longpoll.listen():
@@ -23,7 +23,7 @@ try:
         # ПРОВЕРКА
         reseived_message = event.text.lower()
         sender = event.user_id
-        if sender == 667769478:
+        if sender == 678105126:
             if reseived_message == 'начать':
                 write_message(sender, "Работает!")
             elif reseived_message[0:4] == '/lii':
